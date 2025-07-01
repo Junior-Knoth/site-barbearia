@@ -40,7 +40,7 @@ function Header() {
             </Link>
           </li>
           <button className="scheduling-btn">
-            <i className="bi bi-whatsapp"></i> Agende pelo WhatsApp
+            <i className="bi bi-whatsapp white"></i> Agende pelo WhatsApp
           </button>
         </ul>
       </nav>

@@ -4,6 +4,7 @@ import "./App.css";
 
 // Components
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Sobre from "./pages/Sobre";
 import Servicos from "./pages/Servicos";
@@ -14,18 +15,21 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        {console.log("App component rendered")}
-        <div className="app-layout">
-          <Header />
+        <main>
+          {console.log("App component rendered")}
+          <div className="app-layout">
+            <Header />
 
-          <Routes>
-            <Route path="/" element={<Home />}></Route>
-            <Route path="/sobre" element={<Sobre />}></Route>
-            <Route path="/servicos" element={<Servicos />}></Route>
-            <Route path="/galeria" element={<Galeria />}></Route>
-            <Route path="/contato" element={<Contato />}></Route>
-          </Routes>
-        </div>
+            <Routes>
+              <Route path="/" element={<Home />}></Route>
+              <Route path="/sobre" element={<Sobre />}></Route>
+              <Route path="/servicos" element={<Servicos />}></Route>
+              <Route path="/galeria" element={<Galeria />}></Route>
+              <Route path="/contato" element={<Contato />}></Route>
+            </Routes>
+            <Footer />
+          </div>
+        </main>
       </BrowserRouter>
     </>
   );
